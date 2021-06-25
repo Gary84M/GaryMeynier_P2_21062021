@@ -1,0 +1,28 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.brand{
+    padding-left: 15px;
+}
+.nav-wrapper{
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: baseline;    
+  }
+
+  ul{
+   list-style-type: none;
+  }
+
+  li{
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+ a {
+    text-decoration: none;
+ }
+  .nav-menu{
+    display: flex; 
+  }
+  
