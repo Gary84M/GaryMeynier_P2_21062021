@@ -1,28 +1,36 @@
 body {
     font-family: 'Raleway', sans-serif;
-}
-.brand{
+    line-height: 1.1;
     padding-left: 15px;
+    padding-right: 25px;
 }
 .nav-wrapper{
     display: flex;
-    font-weight: 500;
     justify-content: space-between;
-    align-items: baseline;    
+    font-weight: 500;
   }
-
-  ul{
-   list-style-type: none;
-  }
-
-  li{
-    padding-right: 17px;
-    padding-left: 17px;
-  }
- a {
-    text-decoration: none;
- }
   .nav-menu{
-    display: flex; 
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
   }
-  
+  .nav-menu a {
+      padding-left: 5em;
+  }
+  .header-sign-up{
+      color: #0065FC;
+  }
+  .hosting {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+  }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #0065FC;
+}
+a:visited { 
+     
+    color: none;
+   }
