@@ -10,33 +10,35 @@ body {
     justify-content: space-between;
     font-weight: 500;
   }
-  .header-nav{
-    border: 3px solid #0065FC;
-  }
+  
   .nav-menu{
       display: flex;
       justify-content: space-between;
-      margin-top: 1rem;
       text-align: center;
+      align-items: stretch;
   }
   .nav-menu a {
-      padding-left: 5em;
+      padding: 1rem;
+  }
+
+  .nav-menu a:hover{
+      border: 3px solid blue;
   }
   .header-sign-up{
       color: #0065FC;
   }
-  .hosting {
-    color: #0065FC;
-  }
 a{
     text-decoration: none;
+    color: black;
 }
+
+a:visited { 
+    color: black;
+   }
 a:hover{
     color: #0065FC;
 }
-a:visited { 
-    color: none;
-   }
+
    /* ---Search Bar---*/
 .search{
     margin-top: 2rem;
@@ -74,37 +76,31 @@ a:visited {
         cursor: pointer;
         margin-left: -0.4rem;
     }
-       /* ---Filtres---*/
+
+
+/* --------------------   Filtres  --------------*/
 .filtres-section{
     display: flex;
+    align-items: center;
 }
 
 .filtre{
-    display: flex;
-    padding: 0.06em;
+    padding-right: 1rem;
     border-radius: 2em 2em 2em 2em;
     border: gray 2px solid;
-    margin: 1em;
+    margin-right: 1rem;  
 }
+
 .filtre-icon{
     text-align: center;
-    border: none;
     border-radius: 100%;
     padding: 1em;
     background-color: #DEEBFF;
     color: #0065FC;
-    margin-top: -3px;
-    margin-bottom: -3px;
-    margin-left: -3px;
+    margin-right: 1rem;
 }
-.filtre-title{
-    font-weight: 500;
-    padding-top: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-}
-#info{
+
+.info{
     color: #0065FC;
     border: black 0.5px solid;
     border-radius: 100%;
