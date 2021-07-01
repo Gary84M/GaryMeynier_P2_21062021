@@ -127,11 +127,17 @@ a:visited {
 /*---------------------------hostings---------------------------*/
 
 .hosting-main{
+    margin: 2rem;
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
     padding: 1rem;
-    border-radius: 1.25rem;
+    border-radius: 1.25rem;   
+}
+.hosting-main h3{
+    margin: 0;
+    justify-items: stretch;
+    color: green;
     
 }
 .card-main{
@@ -163,4 +169,33 @@ padding-left: 0.4rem;
 }
 .rating{
     padding-left: 0.4rem;
+}
+/*---------------------------pop---------------------------*/
+.hosting-pop{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 1.25rem;   
+}
+.card-pop{
+    margin: 2rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    line-height: 0.25rem;
+    box-sizing: border-box;
+    border: white 3px solid;
+    box-shadow: 5px 5px 10px rgb(177 177 177);
+}
+.card-pop h4,p {
+font-size: 0.7rem;
+padding-left: 0.4rem;
+}
+.card-pop img {
+    width: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    height: 7rem;
+    border-radius: 1.25rem 1.25rem 0 0;
 }
