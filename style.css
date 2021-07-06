@@ -113,15 +113,16 @@ a{
     background-color:#DEEBFF;
     font-weight: bold;
     transform: scale(1.03);
+    
 }
-.filtre-icon:hover{
+.filtre__icon:hover{
     background-color: #0065FC;
     color: #DEEBFF;
     transform: scale(1.03);
 }
  
 
-.filtre-icon{
+.filtre__icon{
     text-align: center;
     border-radius: 100%;
     padding: 1em;
@@ -143,7 +144,7 @@ a{
     padding-bottom: 0.3rem;
     margin-right: 0.8rem;
 }
-/*---------------------------hostings---------------------------*/
+/*------------------------------------hostings------------------------------------*/
 
 .hosting-main{
     margin: 2rem;
@@ -155,27 +156,36 @@ a{
 }
 .hosting-main h3{   
     color: green;
-    
 }
+
 .card-main{
+    display: flex;
+    flex-direction: column;
     margin: 2rem;
     background-color: white;
     border-radius: 1.25rem;
     line-height: 0.25rem;
-    box-sizing: border-box;
     border: white 3px solid;
     box-shadow: 5px 5px 10px rgb(177 177 177);
+    max-height: 18rem;
+    max-width: 33%;
 }
 .card-main h4,p {
 padding-left: 0.4rem;
 }
+.card-main__img{
+    
+}
+
 .card-main img {
-    height: 10rem;
-    width: 13rem;
-    max-width: 100%;
+    width: fit-content;
+    width: 15rem;
+    height: 11rem;
     border-radius: 1.25rem 1.25rem 0 0;
     object-fit: cover;
 }
+/*------------------------------------hostings------------------------------------*/
+
 .true{
     color: #0065FC;
     padding-bottom: 0.5rem;
@@ -195,6 +205,7 @@ padding-left: 0.4rem;
     background-color: #F2F2F2;
     border-radius: 1.25rem;   
 }
+
 .card-pop{
     margin: 2rem;
     background-color: white;
