@@ -2,9 +2,9 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    max-width: 1401px;
+    align-self: center;
 }
-/* ----------------------------Media Queries---------------------*/
-
 
 /* ----------------------------Nav Bar------------------------*/
 
@@ -14,9 +14,10 @@ body {
     font-weight: 500;
     align-items: stretch;
     padding-left: 1rem;
-    
   }
-  
+  .brand{
+      padding-left: 2rem;
+  }
   .nav-menu{
       display: flex;
       justify-content: space-between;
@@ -52,6 +53,7 @@ a{
    /* -----------------------------Search Bar----------------------------*/
 .search{
     margin-top: 2rem;
+    margin-left: 2rem;
     padding-left: 1rem;
     
 }
@@ -73,6 +75,7 @@ a{
     border-right: none;
     min-width: 25ch;
     margin-bottom: 2.5rem;
+    margin-top: 1rem;
     }
     .submit-button{
         min-height: 2.42rem;
@@ -88,8 +91,11 @@ a{
         color: white;
         cursor: pointer;
         margin-left: -0.4rem;
+        
     }
-
+    .submit-button:hover{
+        transform: scale(1.03);
+    }
 
 /* ---------------------------------   Filtres  -----------------------*/
 .filtres-section h3{
@@ -109,7 +115,7 @@ a{
     font-weight: 500;
     cursor: pointer;
 }
-.filtre:hover{
+.filtre:hover {
     background-color:#DEEBFF;
     font-weight: bold;
     transform: scale(1.03);
@@ -120,8 +126,6 @@ a{
     color: #DEEBFF;
     transform: scale(1.03);
 }
- 
-
 .filtre__icon{
     text-align: center;
     border-radius: 100%;
@@ -145,46 +149,49 @@ a{
     margin-right: 0.8rem;
 }
 /*------------------------------------hostings------------------------------------*/
-
-.hosting-main{
+.hebergement-background{
     margin: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 1.25rem; 
+    padding: 1rem;
+}
+.title-background{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+.hosting-main{
     display: flex;
     flex-wrap: wrap;
-    background-color: #F2F2F2;
-    padding: 1rem;
-    border-radius: 1.25rem;   
-}
-.hosting-main h3{   
-    color: green;
 }
 
 .card-main{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
     line-height: 0.25rem;
     border: white 3px solid;
     box-shadow: 5px 5px 10px rgb(177 177 177);
-    max-height: 18rem;
-    max-width: 33%;
+    max-height: 15rem;
+    max-width: 29%;
+    
+}
+.card-main:hover{
+    transform: scale(1.03);
 }
 .card-main h4,p {
-padding-left: 0.4rem;
-}
-.card-main__img{
-    
+    padding-left: 0.4rem;
 }
 
 .card-main img {
-    width: fit-content;
-    width: 15rem;
-    height: 11rem;
+    width: 100%;
+    height: 9rem;
     border-radius: 1.25rem 1.25rem 0 0;
     object-fit: cover;
 }
-/*------------------------------------hostings------------------------------------*/
+/*------------------------------------ratings------------------------------------*/
 
 .true{
     color: #0065FC;
@@ -196,75 +203,112 @@ padding-left: 0.4rem;
 .rating{
     padding-left: 0.4rem;
 }
-/*---------------------------pop---------------------------*/
-.hosting-pop{
+/*--------------------------------------pop--------------------------------------*/
+.pop-background{
     margin: 2rem;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
-    border-radius: 1.25rem;   
+    border-radius: 1.25rem; 
+    padding: 1rem;
+}
+.title-pop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hosting-pop{
+    display: flex;
+    flex-wrap: wrap;  
 }
 
 .card-pop{
-    margin: 2rem;
+    max-height: 12rem;
+    max-width: 22rem;
+    margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
     border-top: white 4px solid;
     border-left: white 4px solid;
     border-right: white 4px solid;
     box-shadow: 5px 5px 10px rgb(177 177 177);
+    display: flex;
+    
 }
-.card-pop a{
+.card-pop:hover{
+    transform: scale(1.03);
+}
+
+.card-pop h4,p {
     display: flex;
     flex-direction: row;
-}
-.card-pop h4,p {
-    font-size: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     line-height: 0.25rem;
 }
-.card-pop img {
-    height: 10rem;
-    width: 10rem;
-    max-width: 100%;
-    border-radius: 1.25rem 0 0 1.25rem;
-    object-fit: cover;
+.card-pop__img {
+    height: 98%;
+    width: 33%;
 }
+.card-pop__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+
 .info-pop .rating{
     margin-top: 5rem;
 }
 /*----------------------------------ACTIVITIES---------------------------------------*/
+.title-act{
+    padding-left: 3rem;
+}
 .hero-act{
     margin: 2rem;
     padding: 1rem;
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
+    
+}
+.hero-act__2blocs{
+    display: flex;
+    flex-direction: column;
 }
 .card-act{
-    width: fit-content;
-    margin: 2rem;
+    height: 10rem;
+    width: 14rem;
+    flex-wrap: wrap;
+    margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
     line-height: 0.25rem;
-    box-sizing: border-box;
     box-shadow: 5px 5px 10px rgb(177 177 177);
 }
-.card-act h4 {
-    font-size: 1rem;
-    padding: 0.5rem;
-    line-height: 0.25rem;
-    }
-.card-act img {
-    height: 10rem;
-    width: 16rem;
-    max-width: 100%;
+.card-act--vertical{
+    height: 22rem;
+    width: 14rem;
+}
+.card-act__img{
+    height: 75%;
+    width: 100%;
+}
+.card-act img{
+    height: 100%;
+    width: 100%;
     border-radius: 1.25rem 1.25rem 0 0;
     object-fit: cover;
     }
     
-
+    .card-act:hover{
+        transform: scale(1.03);
+    }
+    .card-act h4 {
+        padding: 0.5rem;
+        line-height: 0.25rem;
+        font-size: 0.8rem;
+        }
 
     /*----------------------------------FOOTER---------------------------------------*/
     footer {
@@ -285,3 +329,33 @@ padding-left: 0.4rem;
     .footer a:hover{
         color: #0065FC;
     }
+
+/* -----------------------------------Media Queries---------------------------*/
+/* X-Large devices (large desktops, less than 1400px))*/
+@media (max-width: 1399.98px)
+
+/* Large devices (desktops, less than 1200px))*/
+@media (max-width: 1199.98px)
+
+/* Medium devices (tablets, less than 992px))*/
+@media (max-width: 991.98px) 
+
+/* Small devices (landscape phones, less than 768px))*/
+@media (max-width: 767.98px)
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px)
+
+
+
+
+
+
+
+
+
+/* XX-Large devices (larger desktops))
+    No media query since the xxl breakpoint has no upper bound on its width)*/
+
+
+    
