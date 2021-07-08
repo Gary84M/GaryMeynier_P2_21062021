@@ -11,8 +11,10 @@ body {
 }
 
 /* ----------------------------Nav Bar------------------------*/
-
-.nav-wrapper{
+.nav__hosting-activities{
+    display: inline;
+}
+.nav-wrapper {
     display: flex;
     justify-content: space-between;
     font-weight: 500;
@@ -22,10 +24,11 @@ body {
   .brand{
       padding-left: 2rem;
   }
-  .nav-menu{
+  .nav-menu {
       display: flex;
       justify-content: space-between;
       text-align: center;
+      align-items: center;
       
   }
   .nav-menu a {
@@ -147,14 +150,13 @@ a{
     color: #0065FC;
     border: lightgray 0.5px solid;
     border-radius: 100%;
-    padding-right: 0.5em;
-    padding-left: 0.5rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin-right: 0.8rem;
-    
+    padding-right: 0.8em;
+    padding-left: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 0.8rem;    
 }
-.fa-info i{
+.i-info{
     align-items: center;
 }
 /*------------------------------------hostings------------------------------------*/
@@ -245,8 +247,8 @@ a{
 
 .card-pop{
     max-height: 12rem;
-    max-width: 22rem;
-    min-width: 2%;
+    max-width: 21rem;
+    min-width: 12rem;
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
@@ -289,12 +291,10 @@ a{
     padding-left: 3rem;
 }
 .hero-act{
-    margin: 2rem;
     padding: 1rem;
     display: flex;
-    align-content: flex-start;
+    align-content: stretch;
     flex-wrap: nowrap;
-    
 }
 .hero-act__2blocs{
     display: flex;
@@ -302,7 +302,7 @@ a{
 }
 .card-act{
     height: 10rem;
-    max-width: 14rem;
+    max-width: 20rem;
     min-width: 10rem;
     flex-wrap: wrap;
     margin: 1rem;
@@ -329,7 +329,9 @@ a{
         transform: scale(1.03);
     }
     .card-act h4 {
-        padding: 0.5rem;
+        
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
         line-height: 0.25rem;
         font-size: 0.8rem;
         }
@@ -366,13 +368,8 @@ a{
         display: flex;
         flex-direction: column;
         width: 39%;
-        
     }
-    
 }
-
-
-/*
 /* Large devices (desktops, less than 1200px))*/
 @media screen and (max-width: 1199.98px){
     
@@ -384,19 +381,64 @@ a{
     .hebergement-background{
         order: 1;    
     }
-    
+    .hosting-pop{
+        flex-wrap: nowrap;
+    }
+
+    .card-pop{
+        max-width: 29%;
+        min-width: 25%;
+    }
 }
 
-/* Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) 
-
-Small devices (landscape phones, less than 768px))
+/*Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px)
 
-X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px)
+*/
 
-XX-Large devices (larger desktops))
+/*X-Small devices (portrait phones, less than 588px)*/
+@media screen and (max-width: 587.98px) {
+    .nav__hosting-activities{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+    }
+    .nav-menu{
+        flex-wrap: wrap-reverse;
+    }
+    .header-sign-up{
+        align-items: flex-end;
+        margin-left: 17rem;
+    }
+    .nav__hosting-activities a:hover{
+        border-top: 3px solid white;
+        border-bottom: 3px solid #0065FC;
+      transition-duration: 0.2ms;
+    }
+    .hosting-pop{
+        flex-wrap: wrap;
+    }
+    .card-pop{
+        min-width: 90%;
+    }   
+    .card-main{
+        min-width: 90%;
+    }
+    .hero-act{
+        flex-wrap: wrap;
+    }
+    .card-act{
+        min-width: 90%;
+        height: 80%;
+    }
+    footer{
+        flex-direction: column;
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/*XX-Large devices (larger desktops))
     No media query since the xxl breakpoint has no upper bound on its width)*/
 
 
