@@ -2,8 +2,12 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    max-width: 1401px;
-    align-self: center;
+    
+}
+#bloc_page {
+    max-width: 1440px;
+    justify-content: center;/*!!!!!!!!!!!!!*/
+
 }
 
 /* ----------------------------Nav Bar------------------------*/
@@ -109,6 +113,7 @@ a{
 
 .filtre{
     padding-right: 1rem;
+    
     border-radius: 2em 2em 2em 2em;
     border: lightgray 2px solid;
     margin-right: 1rem;  
@@ -147,6 +152,10 @@ a{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     margin-right: 0.8rem;
+    
+}
+.fa-info i{
+    align-items: center;
 }
 /*------------------------------------hostings------------------------------------*/
 .hebergement-background{
@@ -163,33 +172,45 @@ a{
 .hosting-main{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .card-main{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
     line-height: 0.25rem;
     border: white 3px solid;
     box-shadow: 5px 5px 10px rgb(177 177 177);
-    max-height: 15rem;
-    max-width: 29%;
+    height: 14rem;
+    max-width: 27%;
     
+}
+
+.card-main__img{
+    height: 8rem;
+    width: fit-content;
+}
+.card-main__img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.25rem 1.25rem 0 0;
+    object-fit: cover;
 }
 .card-main:hover{
     transform: scale(1.03);
 }
-.card-main h4,p {
-    padding-left: 0.4rem;
-}
-
-.card-main img {
-    width: 100%;
-    height: 9rem;
-    border-radius: 1.25rem 1.25rem 0 0;
-    object-fit: cover;
+.card-main h4, p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    line-height: 0.2rem;
 }
 /*------------------------------------ratings------------------------------------*/
 
@@ -209,6 +230,7 @@ a{
     background-color: #F2F2F2;
     border-radius: 1.25rem; 
     padding: 1rem;
+    min-width: 30%;
 }
 .title-pop{
     display: flex;
@@ -217,12 +239,14 @@ a{
 
 .hosting-pop{
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+
 }
 
 .card-pop{
     max-height: 12rem;
     max-width: 22rem;
+    min-width: 2%;
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
@@ -237,12 +261,12 @@ a{
     transform: scale(1.03);
 }
 
-.card-pop h4,p {
+.card-pop p h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0.9rem;
-    padding-left: 0.5rem;
+    padding-left: 0.2rem;
     padding-right: 0.5rem;
     line-height: 0.25rem;
 }
@@ -258,7 +282,7 @@ a{
 }
 
 .info-pop .rating{
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 /*----------------------------------ACTIVITIES---------------------------------------*/
 .title-act{
@@ -269,7 +293,7 @@ a{
     padding: 1rem;
     display: flex;
     align-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
 }
 .hero-act__2blocs{
@@ -278,7 +302,8 @@ a{
 }
 .card-act{
     height: 10rem;
-    width: 14rem;
+    max-width: 14rem;
+    min-width: 10rem;
     flex-wrap: wrap;
     margin: 1rem;
     background-color: white;
@@ -288,7 +313,6 @@ a{
 }
 .card-act--vertical{
     height: 22rem;
-    width: 14rem;
 }
 .card-act__img{
     height: 75%;
@@ -331,30 +355,48 @@ a{
     }
 
 /* -----------------------------------Media Queries---------------------------*/
-/* X-Large devices (large desktops, less than 1400px))*/
-@media (max-width: 1399.98px)
+/* Large devices (large desktops, more than 1200px)*/
+@media screen and (min-width: 1199.98px){
+    .hosting{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .pop-background{
+        display: flex;
+        flex-direction: column;
+        width: 39%;
+        
+    }
+    
+}
 
+
+/*
 /* Large devices (desktops, less than 1200px))*/
-@media (max-width: 1199.98px)
+@media screen and (max-width: 1199.98px){
+    
+    .hosting{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .hebergement-background{
+        order: 1;    
+    }
+    
+}
 
-/* Medium devices (tablets, less than 992px))*/
+/* Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) 
 
-/* Small devices (landscape phones, less than 768px))*/
+Small devices (landscape phones, less than 768px))
 @media (max-width: 767.98px)
 
-/* X-Small devices (portrait phones, less than 576px)*/
+X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px)
 
-
-
-
-
-
-
-
-
-/* XX-Large devices (larger desktops))
+XX-Large devices (larger desktops))
     No media query since the xxl breakpoint has no upper bound on its width)*/
 
 
