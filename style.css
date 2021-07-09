@@ -274,7 +274,8 @@ a{
 }
 .card-pop__img {
     height: 98%;
-    width: 33%;
+    width: 37%;
+    min-width: 33%;
 }
 .card-pop__img img{
     height: 100%;
@@ -304,7 +305,6 @@ a{
     height: 10rem;
     max-width: 20rem;
     min-width: 10rem;
-    flex-wrap: wrap;
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
@@ -329,7 +329,6 @@ a{
         transform: scale(1.03);
     }
     .card-act h4 {
-        
         padding-left: 0.5rem;
         padding-bottom: 0.5rem;
         line-height: 0.25rem;
@@ -391,10 +390,21 @@ a{
     }
 }
 
-/*Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px)
+/*Small devices (landscape phones, less than 880)*/
+@media screen and (max-width: 879.98px){
+    .hosting-pop{
+        flex-wrap: wrap;
+    }
+    .card-pop{
+        min-width: 90%;
+    }   
+    .hero-act{
+        flex-wrap: wrap;
+    }
+    
+}
 
-*/
+
 
 /*X-Small devices (portrait phones, less than 588px)*/
 @media screen and (max-width: 587.98px) {
@@ -427,10 +437,7 @@ a{
     .hero-act{
         flex-wrap: wrap;
     }
-    .card-act{
-        min-width: 90%;
-        height: 80%;
-    }
+    
     footer{
         flex-direction: column;
         padding: 2rem;
