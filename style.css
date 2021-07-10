@@ -98,10 +98,12 @@ a{
         color: white;
         cursor: pointer;
         margin-left: -0.4rem;
-        
     }
     .submit-button:hover{
         transform: scale(1.03);
+    }
+    .loupe{
+        display: none;
     }
 
 /* ---------------------------------   Filtres  -----------------------*/
@@ -425,8 +427,25 @@ a{
         border-bottom: 3px solid #0065FC;
       transition-duration: 0.2ms;
     }
+    .submit-button{
+        border-radius: 0.8rem;
+    }
+    .rechercher{
+        display: none;
+    }
+    .loupe{
+        display: inline;
+    }
+    .hebergement-background{
+        background-color: white;
+        margin: 0;
+    }
     .hosting-pop{
         flex-wrap: wrap;
+    }
+    .pop-background{
+        border-radius: 0%;
+        margin: 0;
     }
     .card-pop{
         min-width: 90%;
@@ -434,10 +453,13 @@ a{
     .card-main{
         min-width: 90%;
     }
+    .card-act{
+        min-width: 90%;
+        max-height: 15rem;
+    }
     .hero-act{
         flex-wrap: wrap;
     }
-    
     footer{
         flex-direction: column;
         padding: 2rem;
