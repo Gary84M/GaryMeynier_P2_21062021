@@ -107,9 +107,7 @@ a{
     }
 
 /* ---------------------------------   Filtres  -----------------------*/
-.filtres-section h3{
-    padding-right: 2rem;
-}
+
 .filtres-section{
     display: flex;
     flex-wrap: wrap;
@@ -265,17 +263,18 @@ a{
     transform: scale(1.03);
 }
 
-.card-pop p h4 {
+.card-pop p, h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0.9rem;
-    padding-left: 0.2rem;
+    padding-left: 1rem;
     padding-right: 0.5rem;
     line-height: 0.25rem;
 }
 .card-pop__img {
     height: 98%;
+    max-height: 9rem;
     width: 37%;
     min-width: 33%;
 }
@@ -412,7 +411,7 @@ a{
 @media screen and (max-width: 587.98px) {
     .nav__hosting-activities{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         width: 75%;
     }
     .nav-menu{
@@ -420,7 +419,7 @@ a{
     }
     .header-sign-up{
         align-items: flex-end;
-        margin-left: 17rem;
+        margin-left: 14rem;
     }
     .nav__hosting-activities a:hover{
         border-top: 3px solid white;
@@ -453,12 +452,16 @@ a{
     .card-main{
         min-width: 90%;
     }
-    .card-act{
-        min-width: 90%;
-        max-height: 15rem;
-    }
+    
     .hero-act{
         flex-wrap: wrap;
+    }
+    .card-act{
+        min-width: 60%;
+        max-height: 11rem;
+    }
+    .hero-act__2blocs{
+        min-width: 90%;
     }
     footer{
         flex-direction: column;
