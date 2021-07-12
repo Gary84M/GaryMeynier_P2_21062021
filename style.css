@@ -129,7 +129,7 @@ a{
     transform: scale(1.03);
     
 }
-.filtre__icon:hover{
+.filtre:hover .filtre__icon{
     background-color: #0065FC;
     color: #DEEBFF;
     transform: scale(1.03);
@@ -359,6 +359,9 @@ a{
 /* -----------------------------------Media Queries---------------------------*/
 /* Large devices (large desktops, more than 1200px)*/
 @media screen and (min-width: 1199.98px){
+    #bloc_page{
+        justify-content: center;
+    }
     .hosting{
         display: flex;
         flex-direction: row;
@@ -464,6 +467,7 @@ a{
         min-width: 90%;
     }
     footer{
+        margin: 0;
         flex-direction: column;
         padding: 2rem;
         font-size: 1.2rem;
