@@ -2,18 +2,13 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    
 }
 #bloc_page {
     max-width: 1440px;
-    justify-content: center;/*!!!!!!!!!!!!!*/
-
 }
 
 /* ---------------------------Nav Bar------------------------*/
-.nav__hosting-activities{
-    display: inline;
-}
+
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -184,17 +179,16 @@ a{
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
-    line-height: 0.25rem;
     border: white 3px solid;
     box-shadow: 5px 5px 10px rgb(177 177 177);
-    height: 14rem;
+    height: 15rem;
     max-width: 27%;
     
 }
 
 .card-main__img{
     height: 8rem;
-    width: fit-content;
+    width: 100%;
 }
 .card-main__img img {
     height: 100%;
@@ -206,13 +200,11 @@ a{
     transform: scale(1.03);
 }
 .card-main h4, p {
-    display: flex;
-    flex-direction: row;
+    line-height: 0.75rem;
     flex-wrap: wrap;
     font-size: 0.9rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    line-height: 0.2rem;
 }
 /*------------------------------------ratings------------------------------------*/
 
@@ -246,7 +238,7 @@ a{
 }
 
 .card-pop{
-    max-height: 12rem;
+    height: 8rem;
     max-width: 21rem;
     min-width: 12rem;
     margin: 1rem;
@@ -264,13 +256,12 @@ a{
 }
 
 .card-pop p, h4 {
-    display: flex;
-    flex-direction: row;
+
     flex-wrap: wrap;
     font-size: 0.9rem;
     padding-left: 1rem;
     padding-right: 0.5rem;
-    line-height: 0.25rem;
+    line-height: 0.75rem;
 }
 .card-pop__img {
     height: 98%;
@@ -283,10 +274,6 @@ a{
     width: 100%;
     object-fit: cover;
     border-radius: 1.25rem 0 0 1.25rem;
-}
-
-.info-pop .rating{
-    margin-top: 4rem;
 }
 /*----------------------------------ACTIVITIES---------------------------------------*/
 .title-act{
@@ -309,7 +296,7 @@ a{
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
-    line-height: 0.25rem;
+   
     box-shadow: 5px 5px 10px rgb(177 177 177);
 }
 .card-act--vertical{
@@ -332,13 +319,13 @@ a{
     .card-act h4 {
         padding-left: 0.5rem;
         padding-bottom: 0.5rem;
-        line-height: 0.25rem;
+       
         font-size: 0.8rem;
         }
 
     /*----------------------------------FOOTER---------------------------------------*/
     footer {
-        min-width: 100%;
+
         background-color: #F2F2F2;
         display: flex;
         justify-content: space-around;
@@ -349,7 +336,7 @@ a{
         
     }
     .footer a{
-        line-height: 1.5rem;
+       
         font-size: 0.8rem;
     }
     .footer a:hover{
@@ -359,9 +346,7 @@ a{
 /* -----------------------------------Media Queries---------------------------*/
 /* Large devices (large desktops, more than 1200px)*/
 @media screen and (min-width: 1199.98px){
-    #bloc_page{
-        justify-content: center;
-    }
+    
     .hosting{
         display: flex;
         flex-direction: row;
@@ -412,19 +397,34 @@ a{
 
 /*X-Small devices (portrait phones, less than 588px)*/
 @media screen and (max-width: 587.98px) {
-    .nav__hosting-activities{
-        display: flex;
-        justify-content: space-between;
-        width: 75%;
-    }
+    
     .nav-menu{
-        flex-wrap: wrap-reverse;
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: space-between;
+    }
+    .brand{
+        height: 50%;
+        width: 50%;
+    }
+    .hebergements{
+        width: 50%;
+        
+    }
+    .activites{
+        width: 50%;
     }
     .header-sign-up{
-        align-items: flex-end;
-        margin-left: 14rem;
+        width: 50%;
     }
-    .nav__hosting-activities a:hover{
+    .hebergements-activites{
+        order: 1;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-start;
+    }
+    .nav-menu a:hover{
         border-top: 3px solid white;
         border-bottom: 3px solid #0065FC;
       transition-duration: 0.2ms;
