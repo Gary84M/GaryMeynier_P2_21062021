@@ -11,17 +11,15 @@ body {
 
 .nav-wrapper {
     display: flex;
-    justify-content: space-between;
     font-weight: 500;
-    align-items: stretch;
     padding-left: 1rem;
+    justify-content: space-between;
   }
   .brand{
       padding-left: 2rem;
   }
   .nav-menu {
       display: flex;
-      justify-content: space-between;
       text-align: center;
       align-items: center;
       
@@ -225,6 +223,7 @@ a{
     border-radius: 1.25rem; 
     padding: 1rem;
     min-width: 30%;
+    
 }
 .title-pop{
     display: flex;
@@ -397,34 +396,25 @@ a{
 
 /*X-Small devices (portrait phones, less than 588px)*/
 @media screen and (max-width: 587.98px) {
-    
     .nav-menu{
-        display: flex;
         flex-wrap: wrap;
-        
-        justify-content: space-between;
-    }
-    .brand{
-        height: 50%;
-        width: 50%;
-    }
-    .hebergements{
-        width: 50%;
-        
-    }
-    .activites{
-        width: 50%;
-    }
-    .header-sign-up{
-        width: 50%;
     }
     .hebergements-activites{
-        order: 1;
         display: flex;
-        justify-content: center;
-        justify-content: flex-start;
+        width: 100%;
+        order: 1;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
     }
-    .nav-menu a:hover{
+    .header-sign-up{
+        align-items: baseline;
+        width: 50%;
+    }
+    .brand{
+        width: 50%;
+    }
+    .hebergements-activites a:hover{
         border-top: 3px solid white;
         border-bottom: 3px solid #0065FC;
       transition-duration: 0.2ms;
