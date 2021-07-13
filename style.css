@@ -2,7 +2,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    
+
 }
 
 #bloc_page {
@@ -16,7 +16,8 @@ body {
     display: flex;
     font-weight: 500;
 }
-.logo{
+
+.logo {
     flex-grow: 3;
 }
 
@@ -27,7 +28,7 @@ body {
 }
 
 .header-sign-up {
-    
+
     display: flex;
     order: 1;
     flex-direction: row-reverse;
@@ -47,7 +48,8 @@ body {
     transition-duration: 0.2ms;
     color: #0065FC;
 }
-.logo a:hover{
+
+.logo a:hover {
     border-top: none;
 }
 
@@ -71,7 +73,7 @@ a {
 /* -----------------------------Search Bar----------------------------*/
 .search {
     margin-top: 2rem;
-    
+
     padding-left: 1rem;
 
 }
@@ -212,6 +214,7 @@ a {
     height: 15rem;
     max-width: 27%;
     width: 30%;
+    
 
 }
 
@@ -383,7 +386,8 @@ footer {
     justify-content: space-around;
     padding-bottom: 2rem;
 }
-.footer a{
+
+.footer a {
     line-height: 1.2rem;
 }
 
@@ -409,6 +413,7 @@ footer {
     .hosting {
         display: flex;
         flex-direction: row;
+        margin: 0;
     }
 
     .pop-background {
@@ -433,6 +438,9 @@ footer {
 
     .hosting-pop {
         flex-wrap: nowrap;
+    }
+    .card-main{
+        width: 30%;
     }
 
     .card-pop {
@@ -483,13 +491,15 @@ footer {
         width: 100%;
         order: 1;
     }
-    .hebergements{
+
+    .hebergements {
         width: 50%;
     }
-    .activites{
+
+    .activites {
         width: 50%;
     }
-    
+
 
 
     .nav-menu a:hover {
@@ -531,14 +541,14 @@ footer {
     }
 
     .card-main {
-
+        width: auto;
         max-width: 90%;
     }
 
 
     .hero-act {
         flex-wrap: wrap;
-        width: 100;
+        width: 100%;
     }
 
     .card-act {
