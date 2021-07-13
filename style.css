@@ -211,6 +211,7 @@ a {
     box-shadow: 5px 5px 10px rgb(177 177 177);
     height: 15rem;
     max-width: 27%;
+    width: 30%;
 
 }
 
@@ -279,6 +280,7 @@ p {
     height: 8rem;
     max-width: 21rem;
     min-width: 12rem;
+    width: 21rem;
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
