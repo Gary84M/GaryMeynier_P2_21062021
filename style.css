@@ -399,8 +399,9 @@ a{
 @media screen and (max-width: 644.98px) {
     
     .nav-wrapper{
+        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+       
     }
     
     .logo{
@@ -409,14 +410,16 @@ a{
     }
     .header-sign-up{
         width: 50%;
-        display: block;
+        
     }
-    .hebergements-activites{
-        width: 100%;
+    .hebergements {
+        width: 50%;
         order: 1;
-        display: flex;
     }
-    
+    .activites{
+        width: 50%;
+        order: 2;
+    }
 
     .hebergements-activites a:hover{
         border-top: 3px solid white;
