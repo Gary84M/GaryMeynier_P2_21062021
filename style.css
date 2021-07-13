@@ -383,6 +383,9 @@ footer {
     justify-content: space-around;
     padding-bottom: 2rem;
 }
+.footer a{
+    line-height: 1.2rem;
+}
 
 .footer {
     display: flex;
