@@ -214,7 +214,7 @@ a {
     height: 15rem;
     max-width: 27%;
     width: 30%;
-    
+
 
 }
 
@@ -439,7 +439,8 @@ footer {
     .hosting-pop {
         flex-wrap: nowrap;
     }
-    .card-main{
+
+    .card-main {
         width: 30%;
     }
 
