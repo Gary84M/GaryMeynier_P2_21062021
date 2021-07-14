@@ -214,7 +214,7 @@ a {
     height: 15rem;
     max-width: 27%;
     width: 30%;
-
+    cursor: pointer;
 
 }
 
@@ -292,7 +292,7 @@ p {
     border-right: white 4px solid;
     box-shadow: 5px 5px 10px rgb(177 177 177);
     display: flex;
-
+    cursor: pointer;
 }
 
 .card-pop:hover {
@@ -347,12 +347,13 @@ h4 {
     margin: 1rem;
     background-color: white;
     border-radius: 1.25rem;
-
+    cursor: pointer;
     box-shadow: 5px 5px 10px rgb(177 177 177);
 }
 
 .card-act--vertical {
     height: 22rem;
+    justify-content: center;
 }
 
 .card-act__img {
@@ -474,7 +475,7 @@ footer {
     .nav-wrapper {
         display: flex;
         flex-wrap: wrap;
-
+        margin: 0;
     }
 
     .logo {
@@ -500,8 +501,6 @@ footer {
     .activites {
         width: 50%;
     }
-
-
 
     .nav-menu a:hover {
         border-top: 3px solid white;
@@ -550,6 +549,8 @@ footer {
     .hero-act {
         flex-wrap: wrap;
         width: 100%;
+        padding: 0;
+        justify-content: center;
     }
 
     .card-act {
@@ -559,6 +560,7 @@ footer {
 
     .hero-act__2blocs {
         min-width: 90%;
+        align-items: center;
     }
 
     footer {
